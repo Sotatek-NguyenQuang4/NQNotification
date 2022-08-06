@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NQNotification'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of NQNotification.'
+  s.summary          = 'PushNotifications SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,15 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/quang.nguyen/NQNotification'
+  s.homepage         = 'https://github.com/Sotatek-NguyenQuang4/NQNotification'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'quang.nguyen' => 'quang.nguyen4@sotatek.com' }
-  s.source           = { :git => 'https://github.com/quang.nguyen/NQNotification.git', :tag => s.version.to_s }
+  s.author           = { 'quang nguyen' => 'quang.nguyen4@sotatek.com' }
+  s.source           = { :git => 'https://github.com/Sotatek-NguyenQuang4/NQNotification.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
+  s.ios.deployment_target = '11.0'
+  s.swift_version = "4.2"
+  
   s.source_files = 'NQNotification/Classes/**/*'
   
   # s.resource_bundles = {
