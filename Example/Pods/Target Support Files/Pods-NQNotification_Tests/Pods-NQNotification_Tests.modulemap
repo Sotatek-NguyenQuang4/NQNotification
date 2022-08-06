@@ -1,0 +1,6 @@
+framework module Pods_NQNotification_Tests {
+  umbrella header "Pods-NQNotification_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

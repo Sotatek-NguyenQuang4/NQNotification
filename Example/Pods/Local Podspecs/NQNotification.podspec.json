@@ -1,0 +1,36 @@
+{
+  "name": "NQNotification",
+  "version": "0.1.0",
+  "summary": "A short description of NQNotification.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/quang.nguyen/NQNotification",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "quang.nguyen": "quang.nguyen4@sotatek.com"
+  },
+  "source": {
+    "git": "https://github.com/quang.nguyen/NQNotification.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "NQNotification/Classes/**/*",
+  "dependencies": {
+    "Firebase/Analytics": [
+
+    ],
+    "Firebase/Messaging": [
+
+    ],
+    "Firebase/Core": [
+
+    ],
+    "Firebase/Auth": [
+
+    ]
+  }
+}
