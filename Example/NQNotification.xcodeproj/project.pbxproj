@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		77768096237DE9049561D743 /* Pods_NQNotification_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93C73E7A9B3F3179C95C7A28 /* Pods_NQNotification_Tests.framework */; };
+		D6E1815B289EADAF00E737CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6E1815A289EADAF00E737CE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		93C73E7A9B3F3179C95C7A28 /* Pods_NQNotification_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NQNotification_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE773232AF36C4EDACEC8E0E /* Pods_NQNotification_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NQNotification_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4AF88C8A4401F8087CBC1C5 /* Pods-NQNotification_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NQNotification_Example.debug.xcconfig"; path = "Target Support Files/Pods-NQNotification_Example/Pods-NQNotification_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D6E18159289EAD9100E737CE /* NQNotification_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NQNotification_Example.entitlements; sourceTree = "<group>"; };
+		D6E1815A289EADAF00E737CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				D6E18159289EAD9100E737CE /* NQNotification_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for NQNotification */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -107,6 +111,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6E1815A289EADAF00E737CE /* GoogleService-Info.plist */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -213,6 +218,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 6T4T98ZT8C;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -248,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				D6E1815B289EADAF00E737CE /* GoogleService-Info.plist in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -519,11 +526,13 @@
 			baseConfigurationReference = D4AF88C8A4401F8087CBC1C5 /* Pods-NQNotification_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NQNotification_Example.entitlements;
+				DEVELOPMENT_TEAM = 6T4T98ZT8C;
 				INFOPLIST_FILE = NQNotification/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qalatt.test-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -535,11 +544,13 @@
 			baseConfigurationReference = 2F21A78232E7672FF31EE55E /* Pods-NQNotification_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NQNotification_Example.entitlements;
+				DEVELOPMENT_TEAM = 6T4T98ZT8C;
 				INFOPLIST_FILE = NQNotification/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qalatt.test-sdk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -572,6 +583,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7CCE1592ED787D879A0BF7CF /* Pods-NQNotification_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 6T4T98ZT8C;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

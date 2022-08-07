@@ -335,7 +335,7 @@
 		66815C21F9A5F5EEBD3D8FBC9755F400 /* FIRGetOOBConfirmationCodeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6754E9A1B8B82633B5771EB6EEA5DDB6 /* FIRGetOOBConfirmationCodeRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		66DA5909F29CDBB9347542CEB2F84E36 /* FIRFinalizeMFASignInResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F5551C86F8F880727283579A9C9C6EC5 /* FIRFinalizeMFASignInResponse.m */; };
 		676E3FB25B313DBAFE0E7591455107D4 /* FIRFinalizeMFASignInRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D418836E5B48523778C83FE20E2D1B3 /* FIRFinalizeMFASignInRequest.m */; };
-		6784909FFBE01F1B0F5B8FD4D7758BBB /* AppDelegateFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2024247FD20C18CBF9649E6D42F7B /* AppDelegateFireBase.swift */; };
+		6784909FFBE01F1B0F5B8FD4D7758BBB /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2024247FD20C18CBF9649E6D42F7B /* PushNotificationManager.swift */; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 12F9D6F96653E2BDC3A8A963BBA2ACF1 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		68F0376B9608DD4825141BE615A9A284 /* FIRDependency.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9F664408A0B3DE042C4C5D703E24FD /* FIRDependency.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		69019F46FF15E88738A241920FB092DF /* FIROAuthProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CFD9F62364AAB7030E9D4227B56D78C /* FIROAuthProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -646,7 +646,7 @@
 		D67AA3280BA8CE7E64D7309D6AE262C0 /* GULApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 18510C7283985CDF9958C75BB3E044E3 /* GULApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6875AD72E70AB43F28755335DDED951 /* FIRInstallations.h in Headers */ = {isa = PBXBuildFile; fileRef = AF46A2D9B904895D549F051E019DA1C1 /* FIRInstallations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6CBB38F5CFD1E382E86D4D2ECB14C05 /* HeartbeatsPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5F0671161D0E9937941F65DBA85EA8 /* HeartbeatsPayload.swift */; };
-		D6E18155289E47F700E737CE /* AppMainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E18154289E47F700E737CE /* AppMainProtocol.swift */; };
+		D6E18155289E47F700E737CE /* NotificationSettingsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E18154289E47F700E737CE /* NotificationSettingsProvider.swift */; };
 		D7058F887988F2F3B4E19BC2C7E68922 /* GDTCORMetricsControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DE0F6A1024BD185EB50C49CC9D2CD9A5 /* GDTCORMetricsControllerProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D70606C59DD83D11D9DC42D09BCA7A42 /* FirebaseAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8250451886DF3DCA8DC2E0C376990946 /* FirebaseAuth-dummy.m */; };
 		D732D35B635F0F9A2D0D2C0177F3954E /* GDTCORMetricsController.h in Headers */ = {isa = PBXBuildFile; fileRef = CF83438E5C8237E85E8A949553347AE1 /* GDTCORMetricsController.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -1317,7 +1317,7 @@
 		3E86CB433699DDB364A44CF20746D182 /* FIRVerifyClientRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRVerifyClientRequest.h; path = FirebaseAuth/Sources/Backend/RPC/FIRVerifyClientRequest.h; sourceTree = "<group>"; };
 		3E9A209E293F3A38C60E9D427B44DF11 /* FIRMessagingTokenFetchOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRMessagingTokenFetchOperation.m; path = FirebaseMessaging/Sources/Token/FIRMessagingTokenFetchOperation.m; sourceTree = "<group>"; };
 		3ED9CD66DD9134C07D5E3E05604AA1FA /* FIRSignInWithGameCenterRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRSignInWithGameCenterRequest.h; path = FirebaseAuth/Sources/Backend/RPC/FIRSignInWithGameCenterRequest.h; sourceTree = "<group>"; };
-		3EE2024247FD20C18CBF9649E6D42F7B /* AppDelegateFireBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppDelegateFireBase.swift; path = NQNotification/Classes/AppDelegateFireBase.swift; sourceTree = "<group>"; };
+		3EE2024247FD20C18CBF9649E6D42F7B /* PushNotificationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushNotificationManager.swift; path = NQNotification/Classes/PushNotificationManager.swift; sourceTree = "<group>"; };
 		402BC4D4BCA9438B03C729E25B1E3F6C /* FIRHeartbeatLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRHeartbeatLogger.m; path = FirebaseCore/Sources/FIRHeartbeatLogger.m; sourceTree = "<group>"; };
 		4079A05CC63F801AC6D1850B563CD154 /* FIRPhoneMultiFactorInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FIRPhoneMultiFactorInfo.m; path = FirebaseAuth/Sources/MultiFactor/Phone/FIRPhoneMultiFactorInfo.m; sourceTree = "<group>"; };
 		40CA40BA5BB25C9558A861A079C9E386 /* FIRMessagingAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessagingAnalytics.h; path = FirebaseMessaging/Sources/FIRMessagingAnalytics.h; sourceTree = "<group>"; };
@@ -1760,7 +1760,7 @@
 		D5EC8CA5FFD9A9D512A8D663D619690B /* GDTCORRegistrar_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTCORRegistrar_Private.h; path = GoogleDataTransport/GDTCORLibrary/Private/GDTCORRegistrar_Private.h; sourceTree = "<group>"; };
 		D669AD1F1D19CA6136E25E9BB2786415 /* GULNetwork.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GULNetwork.m; path = GoogleUtilities/Network/GULNetwork.m; sourceTree = "<group>"; };
 		D6DA9E67F89B619A8DF005434FD6623D /* RingBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RingBuffer.swift; path = FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift; sourceTree = "<group>"; };
-		D6E18154289E47F700E737CE /* AppMainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppMainProtocol.swift; path = NQNotification/Classes/AppMainProtocol.swift; sourceTree = "<group>"; };
+		D6E18154289E47F700E737CE /* NotificationSettingsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationSettingsProvider.swift; path = NQNotification/Classes/NotificationSettingsProvider.swift; sourceTree = "<group>"; };
 		D72761E04131EAE1DE2CB481ED8E3414 /* FIRMultiFactorSession+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FIRMultiFactorSession+Internal.h"; path = "FirebaseAuth/Sources/MultiFactor/FIRMultiFactorSession+Internal.h"; sourceTree = "<group>"; };
 		D78BA91AA29AB9330EF2630A12CDCF37 /* GoogleUtilities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GoogleUtilities.modulemap; sourceTree = "<group>"; };
 		D7AF985495698932B8568773352BBBED /* FIRGoogleAuthProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRGoogleAuthProvider.h; path = FirebaseAuth/Sources/Public/FirebaseAuth/FIRGoogleAuthProvider.h; sourceTree = "<group>"; };
@@ -2164,8 +2164,8 @@
 		0FF796A4E080C7F59B779B7824384B2A /* NQNotification */ = {
 			isa = PBXGroup;
 			children = (
-				D6E18154289E47F700E737CE /* AppMainProtocol.swift */,
-				3EE2024247FD20C18CBF9649E6D42F7B /* AppDelegateFireBase.swift */,
+				D6E18154289E47F700E737CE /* NotificationSettingsProvider.swift */,
+				3EE2024247FD20C18CBF9649E6D42F7B /* PushNotificationManager.swift */,
 				181470BEA4F13C6199F5C5ED4A0DBD98 /* Pod */,
 				AEFF12CD070D27139D7195805D327304 /* Support Files */,
 			);
@@ -4692,8 +4692,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E18155289E47F700E737CE /* AppMainProtocol.swift in Sources */,
-				6784909FFBE01F1B0F5B8FD4D7758BBB /* AppDelegateFireBase.swift in Sources */,
+				D6E18155289E47F700E737CE /* NotificationSettingsProvider.swift in Sources */,
+				6784909FFBE01F1B0F5B8FD4D7758BBB /* PushNotificationManager.swift in Sources */,
 				BEE05C0C247D4932D3949D7993F64052 /* NQNotification-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

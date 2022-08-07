@@ -7,16 +7,11 @@
 
 import Foundation
 
-public protocol NotificationSettingsProvider {
+public protocol NotificationSettingsProvider: class {
     /// Firebase refresh registration token:
     /// - Parameter fcmToken: get fcm token
     func refreshRegistrationToken(fcmToken: String)
     /// Firebase received registration token:
     /// - Parameter fcmToken: get fcm token
     func receivedRegistrationToken(fcmToken: String?)
-}
-
-public class AppMainData: NSObject {
-    public static let shared = AppMainData()
-    public var delegate: NotificationSettingsProvider?
 }
